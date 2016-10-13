@@ -1,9 +1,30 @@
 body {
+background-color: black;
   background-image: url("https://en.dailypakistan.com.pk/wp-content/uploads/2015/09/32-650x325.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   color: white;
   padding-top: 4%;
   padding-left: 10%;
+  font-size: 1.25em;
 
+}
+
+input {
+  font-size: 1em;
+}
+
+button {
+  background-color: lightgreen;
+  padding: 3px;
+  font-size: .9em;
+  border-radius: 5px;
+}
+
+#user {
+  padding-top: 100px;
+}
+
+#rpDisplay {
+  min-height: 600px;
 }

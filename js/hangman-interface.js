@@ -1,5 +1,6 @@
-var Hangman = require ("./../js/hangman.js").hangmanModule;
 
+var Hangman = require ("./../js/hangman.js").hangmanModule;
+var apiKey = require ("./../.env").apiKey;
 
 
 $(document).ready(function(){
@@ -7,7 +8,16 @@ $(document).ready(function(){
   hangbro.getWord();
   // the next two commands are going to run too early
 
-
+  $('#user').submit(function(event){
+    event.preventDefault();
+    $.get('https://api.github.com/users/' + $('#un').val() + '/repos')
+      .then(function(response) {
+        console.log(response);
+        response.forEach(function(repo) {
+          $('#rpDisplay').append(repo.description + " <br> ");
+        });
+      });
+  });
 
 
   $('#letterGuess').submit(function(event){
