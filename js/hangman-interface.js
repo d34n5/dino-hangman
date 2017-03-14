@@ -28,9 +28,9 @@ $(document).ready(function(){
     $('#remainingGuesses').text("GUESSES REMAINING:  " + hangbro.guessesRemaining);
     $('img').attr("src", "img/" + hangbro.guessesRemaining + ".png");
     if (hangbro.gameLost()){
-      $('#remainingGuesses').append("Sad trombone.  You have failed yourself.")
+      $('#remainingGuesses').append("Sad trombone.  You have failed yourself.");
     } else if (hangbro.gameWon()) {
-      $('#remainingGuesses').append("Congrats ~ You escaped the gallows ~ You must be smarter than a Rocket Surgeon.")
+      $('#remainingGuesses').append("Congrats ~ You escaped the gallows ~ You must be smarter than a Rocket Surgeon.");
     }
     $('#actualLetter').val("");
     event.preventDefault();

@@ -11,16 +11,29 @@
   "devDependencies": {
     "bower-files": "^3.14.1",
     "browser-sync": "^2.17.3",
-    "browserify": "^13.1.0",
+    "browserify": "^13.3.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-jshint": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
     "gulp-sass": "^2.3.2",
+    "gulp-serve": "^1.4.0",
     "gulp-sourcemaps": "^1.7.3",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "jshint": "^2.9.3",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d34n5/dino-hangman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d34n5/dino-hangman/issues"
+  },
+  "homepage": "https://github.com/d34n5/dino-hangman#readme"
 }
